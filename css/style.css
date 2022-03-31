@@ -755,7 +755,6 @@ h6 {
 }
 .partners__title {
   margin-bottom: 26px;
-  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -780,22 +779,16 @@ h6 {
     font-size: 24px;
   }
 }
-@media (max-width: 29.99875em) {
-  .partners__title {
-    font-size: 16px;
-  }
-}
 .partners__body {
   margin-left: 76px;
   position: relative;
 }
-@media (max-width: 47.99875em) {
+@media (max-width: 61.99875em) {
   .partners__body {
     margin-left: 0;
   }
 }
 .partners__subtitle {
-  font-family: "Proxima Nova";
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
@@ -822,16 +815,11 @@ h6 {
     font-size: 24px;
   }
 }
-@media (max-width: 29.99875em) {
-  .partners__subtitle {
-    font-size: 16px;
-  }
-}
 .partners__box {
   display: flex;
   justify-content: space-between;
   margin-bottom: 92px;
-  column-gap: 25px;
+  column-gap: 20px;
   row-gap: 40px;
 }
 @media (max-width: 61.99875em) {
@@ -848,7 +836,7 @@ h6 {
 }
 .partners__item {
   position: relative;
-  max-width: 310px;
+  max-width: 330px;
   width: 100%;
 }
 .partners__item::after {
@@ -856,14 +844,10 @@ h6 {
   position: absolute;
   top: 121px;
   left: 0;
-  width: 294px;
+  max-width: 325px;
+  width: 100%;
   height: 2px;
   background-color: #111926;
-}
-@media (max-width: 82.5em) {
-  .partners__item::after {
-    width: 100%;
-  }
 }
 @media (max-width: 61.99875em) {
   .partners__item {
@@ -871,7 +855,6 @@ h6 {
   }
 }
 .partners__time {
-  font-family: "Proxima Nova";
   font-weight: 700;
   font-size: 36px;
   line-height: 122px;
@@ -880,15 +863,19 @@ h6 {
 }
 .partners__time span {
   font-size: 100px;
-  font-weight: 700;
+  font-weight: 400;
 }
 @media (max-width: 82.5em) {
   .partners__time span {
     font-size: 80px;
   }
 }
+@media (max-width: 61.99875em) {
+  .partners__time span {
+    font-size: 70px;
+  }
+}
 .partners__text {
-  font-family: "Proxima Nova";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -929,8 +916,8 @@ h6 {
 .partners__image {
   position: absolute;
   z-index: -1;
-  bottom: -51px;
-  right: 10px;
+  bottom: -202px;
+  right: 0px;
   max-width: 100%;
 }
 @media (max-width: 61.99875em) {
@@ -974,6 +961,247 @@ h6 {
 
 .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.work {
+  position: relative;
+  background-color: #111926;
+}
+.work:hover .work__image-ibg {
+  opacity: 0.27;
+}
+.work__container {
+  position: relative;
+  z-index: 10;
+}
+.work__body {
+  color: #fff;
+  padding-top: 126px;
+  padding-bottom: 117px;
+}
+@media (max-width: 47.99875em) {
+  .work__body {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.work__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  color: #fb7a19;
+  margin-bottom: 37px;
+  margin-left: 75px;
+}
+@media (max-width: 47.99875em) {
+  .work__name {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+.work__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 63px;
+  margin-left: 75px;
+}
+@media (max-width: 47.99875em) {
+  .work__title {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 63px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .work__title {
+    font-size: 26px;
+  }
+}
+.work__item {
+  padding-top: 19px;
+  border-bottom: 1px solid #364866;
+  min-height: 130px;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  transition: after 0.3s ease 0s;
+}
+.work__item:first-child {
+  border-top: 1px solid #364866;
+}
+@media (min-width: 82.5em) {
+  .work__item::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -100%;
+    right: 0;
+    width: 300%;
+    height: 129px;
+    background-color: #111926;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .work__item:hover::after {
+    opacity: 1;
+  }
+}
+.work__subtitle {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 75px;
+}
+.work__subtitle:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (max-width: 82.5em) {
+  .work__subtitle {
+    font-size: 25px;
+  }
+}
+@media (max-width: 61.99875em) {
+  .work__subtitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .work__subtitle {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+.work__box {
+  margin-left: 75px;
+  column-gap: 150px;
+  display: flex;
+}
+.work__box_m {
+  column-gap: 126px;
+}
+@media (max-width: 82.5em) {
+  .work__box {
+    column-gap: 70px;
+  }
+}
+@media (max-width: 47.99875em) {
+  .work__box {
+    row-gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    justify-content: space-between;
+    column-gap: 15px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .work__box {
+    margin-left: 0;
+  }
+}
+.work__elem {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 300px;
+}
+.work__elem span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 6px;
+}
+.work__elem p {
+  display: inline;
+}
+@media (max-width: 47.99875em) {
+  .work__elem {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .work__elem {
+    flex: 1 1 100%;
+  }
+}
+.work__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #5b7494;
+  max-width: 160px;
+  width: 100%;
+  border-radius: 21px;
+  transition: all 0.3s ease 0s;
+}
+.work__button span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  padding: 11px 7px;
+  background: #263349;
+  border-radius: 50%;
+}
+.work__button svg path {
+  transition: all 0.3s ease 0s;
+}
+@media (min-width: 61.99875em) {
+  .work__button {
+    position: absolute;
+    bottom: 22px;
+    right: 0;
+  }
+  .work__button:hover {
+    background: #263349;
+    color: #fff;
+  }
+  .work__button:hover svg path {
+    fill: #fff;
+  }
+}
+@media (max-width: 61.99875em) {
+  .work__button {
+    margin-left: 75px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #fff;
+    background: #263349;
+  }
+  .work__button svg path {
+    fill: #fff;
+  }
+}
+@media (max-width: 47.99875em) {
+  .work__button {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 29.99875em) {
+  .work__button {
+    margin-left: 0;
+  }
+}
+.work__image-ibg {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease 0s;
+}
+@media (min-width: 82.5em) {
+  .work__image-ibg {
+    z-index: 1;
+  }
 }
 /**
  * Swiper 8.0.7
