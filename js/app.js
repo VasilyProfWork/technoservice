@@ -3235,63 +3235,63 @@
             }));
         }
     }), 0);
-    var bg = document.getElementById("hov1");
+    let bg = document.getElementById("hov1");
     document.getElementById("hov2").addEventListener("mouseover", (function() {
         bg.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg.style.opacity = "";
         }));
     }));
-    var bg2 = document.getElementById("hov3");
+    let bg2 = document.getElementById("hov3");
     document.getElementById("hov4").addEventListener("mouseover", (function() {
         bg2.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg2.style.opacity = "";
         }));
     }));
-    var bg3 = document.getElementById("hov5");
+    let bg3 = document.getElementById("hov5");
     document.getElementById("hov6").addEventListener("mouseover", (function() {
         bg3.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg3.style.opacity = "";
         }));
     }));
-    var bg4 = document.getElementById("hov7");
+    let bg4 = document.getElementById("hov7");
     document.getElementById("hov8").addEventListener("mouseover", (function() {
         bg4.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg4.style.opacity = "";
         }));
     }));
-    var bg5 = document.getElementById("hov9");
+    let bg5 = document.getElementById("hov9");
     document.getElementById("hov10").addEventListener("mouseover", (function() {
         bg5.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg5.style.opacity = "";
         }));
     }));
-    var bg6 = document.getElementById("hov11");
+    let bg6 = document.getElementById("hov11");
     document.getElementById("hov12").addEventListener("mouseover", (function() {
         bg6.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg6.style.opacity = "";
         }));
     }));
-    var bg7 = document.getElementById("hov13");
+    let bg7 = document.getElementById("hov13");
     document.getElementById("hov14").addEventListener("mouseover", (function() {
         bg7.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg7.style.opacity = "";
         }));
     }));
-    var bg8 = document.getElementById("hov15");
+    let bg8 = document.getElementById("hov15");
     document.getElementById("hov16").addEventListener("mouseover", (function() {
         bg8.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
             bg8.style.opacity = "";
         }));
     }));
-    var bg9 = document.getElementById("hov17");
+    let bg9 = document.getElementById("hov17");
     document.getElementById("hov18").addEventListener("mouseover", (function() {
         bg9.style.opacity = "0.27";
         this.addEventListener("mouseout", (function() {
